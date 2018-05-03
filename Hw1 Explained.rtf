@@ -1,0 +1,115 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\margl1440\margr1440\vieww23400\viewh15500\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 0804851b <main>:\
+ 804851b:	8d 4c 24 04          	lea    ecx,[esp+0x4]\
+ 804851f:	83 e4 f0             	and    esp,0xfffffff0\
+ 8048522:	ff 71 fc             	push   DWORD PTR [ecx-0x4]\
+ 8048525:	55                   	push   ebp\
+ 8048526:	89 e5                	mov    ebp,esp\
+ 8048528:	51                   	push   ecx\
+ 8048529:	83 ec 54             	sub    esp,0x54\
+ 804852c:	89 c8                	mov    eax,ecx\
+ 804852e:	8b 50 04             	mov    edx,DWORD PTR [eax+0x4]\
+ 8048531:	89 55 b4             	mov    DWORD PTR [ebp-0x4c],edx\
+ 8048534:	8b 40 08             	mov    eax,DWORD PTR [eax+0x8]\
+ 8048537:	89 45 b0             	mov    DWORD PTR [ebp-0x50],eax\
+ 804853a:	65 a1 14 00 00 00    	mov    eax,gs:0x14\
+ 8048540:	89 45 f4             	mov    DWORD PTR [ebp-0xc],eax\
+ 8048543:	31 c0                	xor    eax,eax\
+ 8048545:	83 ec 0c             	sub    esp,0xc\
+ 8048548:	6a 64                	push   0x64 \
+ 804854a:	e8 71 fe ff ff       	call   80483c0 <malloc@plt>. //allocating a memory for the variable\
+ 804854f:	83 c4 10             	add    esp,0x10\
+ 8048552:	89 45 d0             	mov    DWORD PTR [ebp-0x30],eax // variable is stored in the register [ebp-0x30]\
+ 8048555:	83 ec 08             	sub    esp,0x8\
+ 8048558:	ff 75 d0             	push   DWORD PTR [ebp-0x30]\
+ 804855b:	68 00 87 04 08       	push   0x8048700\
+ 8048560:	e8 9b fe ff ff       	call   8048400 <__isoc99_scanf@plt> //Calling scanf for the user input\
+ 8048565:	83 c4 10             	add    esp,0x10\
+ 8048568:	c6 45 da 55          	mov    BYTE PTR [ebp-0x26],0x55. //Hex values\
+ 804856c:	c6 45 db 70          	mov    BYTE PTR [ebp-0x25],0x70\
+ 8048570:	c6 45 dc 7a          	mov    BYTE PTR [ebp-0x24],0x7a\
+ 8048574:	c6 45 dd 45          	mov    BYTE PTR [ebp-0x23],0x45\
+ 8048578:	c6 45 de 6b          	mov    BYTE PTR [ebp-0x22],0x6b\
+ 804857c:	c6 45 df 62          	mov    BYTE PTR [ebp-0x21],0x62\
+ 8048580:	c6 45 e0 40          	mov    BYTE PTR [ebp-0x20],0x40\
+ 8048584:	c6 45 e1 7d          	mov    BYTE PTR [ebp-0x1f],0x7d\
+ 8048588:	c6 45 e2 6c          	mov    BYTE PTR [ebp-0x1e],0x6c\
+ 804858c:	c6 45 e3 79          	mov    BYTE PTR [ebp-0x1d],0x79\
+ 8048590:	c6 45 e4 78          	mov    BYTE PTR [ebp-0x1c],0x78\
+ 8048594:	c6 45 e5 58          	mov    BYTE PTR [ebp-0x1b],0x58\
+ 8048598:	c6 45 e6 65          	mov    BYTE PTR [ebp-0x1a],0x65\
+ 804859c:	c6 45 e7 67          	mov    BYTE PTR [ebp-0x19],0x67\
+ 80485a0:	c6 45 e8 7c          	mov    BYTE PTR [ebp-0x18],0x7c\
+ 80485a4:	c6 45 e9 40          	mov    BYTE PTR [ebp-0x17],0x40\
+ 80485a8:	c6 45 ea 70          	mov    BYTE PTR [ebp-0x16],0x70\
+ 80485ac:	c6 45 eb 61          	mov    BYTE PTR [ebp-0x15],0x61\
+ 80485b0:	c6 45 ec 60          	mov    BYTE PTR [ebp-0x14],0x60\
+ 80485b4:	c6 45 ed 63          	mov    BYTE PTR [ebp-0x13],0x63\
+ 80485b8:	c6 45 ee 7a          	mov    BYTE PTR [ebp-0x12],0x7a\
+ 80485bc:	c6 45 ef 64          	mov    BYTE PTR [ebp-0x11],0x64\
+ 80485c0:	c6 45 f0 73          	mov    BYTE PTR [ebp-0x10],0x73\
+ 80485c4:	c6 45 f1 39          	mov    BYTE PTR [ebp-0xf],0x39\
+ 80485c8:	c6 45 f2 59          	mov    BYTE PTR [ebp-0xe],0x59\
+ 80485cc:	c6 45 f3 39          	mov    BYTE PTR [ebp-0xd],0x39 // hex values\
+ 80485d0:	83 ec 0c             	sub    esp,0xc\
+ 80485d3:	ff 75 d0             	push   DWORD PTR [ebp-0x30]\
+ 80485d6:	e8 05 fe ff ff       	call   80483e0 <strlen@plt> //Calling strlen on the [ebp-0x30] (user input)\
+ 80485db:	83 c4 10             	add    esp,0x10\
+ 80485de:	89 45 d4             	mov    DWORD PTR [ebp-0x2c],eax //Storing the output of strlen in [ebp-0x2c]\
+ 80485e1:	c7 45 c8 01 00 00 00 	mov    DWORD PTR [ebp-0x38],0x1\
+ 80485e8:	c7 45 cc 00 00 00 00 	mov    DWORD PTR [ebp-0x34],0x0 // This is the counter variable for the loops\
+ 80485ef:	eb 36                	jmp    8048627 <main+0x10c>\
+ 80485f1:	8d 55 da             	lea    edx,[ebp-0x26].  //loads the address [ebp-0x26]\
+ 80485f4:	8b 45 cc             	mov    eax,DWORD PTR [ebp-0x34] \
+ 80485f7:	01 d0                	add    eax,edx\
+ 80485f9:	0f b6 00             	movzx  eax,BYTE PTR [eax] // stores a BYTE (8 bits) from the older value of eax in new eax\
+ 80485fc:	89 c1                	mov    ecx,eax\
+ 80485fe:	8b 55 cc             	mov    edx,DWORD PTR [ebp-0x34]\
+ 8048601:	8b 45 d0             	mov    eax,DWORD PTR [ebp-0x30]\
+ 8048604:	01 d0                	add    eax,edx\
+ 8048606:	0f b6 00             	movzx  eax,BYTE PTR [eax]// stores a BYTE (8 bits) from the older value of eax in new eax\
+ 8048609:	31 c8                	xor    eax,ecx.     // XOR first byte of user string with the first byte of hex values in the list\
+ 804860b:	88 45 c7             	mov    BYTE PTR [ebp-0x39],al //storing the result in [ebp-0x39]\
+ 804860e:	0f b6 45 c7          	movzx  eax,BYTE PTR [ebp-0x39]//zero extends the value of [ebp-0x39] and stores in eax\
+ 8048612:	8b 55 cc             	mov    edx,DWORD PTR [ebp-0x34]\
+ 8048615:	83 c2 01             	add    edx,0x1.   //Adds 1 to the edx (value that stores counter)\
+ 8048618:	39 d0                	cmp    eax,edx.   //compares the the output of the XOR with the Counter (which is the KEY! for this program)\
+ 804861a:	74 07                	je     8048623 <main+0x108> //jump if the condition matches\
+ 804861c:	c7 45 c8 00 00 00 00 	mov    DWORD PTR [ebp-0x38],0x0\
+ 8048623:	83 45 cc 01          	add    DWORD PTR [ebp-0x34],0x1 //adding 1 to the counter\
+ 8048627:	8b 45 cc             	mov    eax,DWORD PTR [ebp-0x34]\
+ 804862a:	3b 45 d4             	cmp    eax,DWORD PTR [ebp-0x2c] //Comparing the counter with the length of user input string\
+ 804862d:	7c c2                	jl     80485f1 <main+0xd6>\
+ 804862f:	83 7d c8 01          	cmp    DWORD PTR [ebp-0x38],0x1\
+ 8048633:	75 12                	jne    8048647 <main+0x12c>\
+ 8048635:	83 ec 0c             	sub    esp,0xc\
+ 8048638:	68 03 87 04 08       	push   0x8048703\
+ 804863d:	e8 8e fd ff ff       	call   80483d0 <puts@plt>\
+ 8048642:	83 c4 10             	add    esp,0x10\
+ 8048645:	eb 10                	jmp    8048657 <main+0x13c>\
+ 8048647:	83 ec 0c             	sub    esp,0xc\
+ 804864a:	68 06 87 04 08       	push   0x8048706\
+ 804864f:	e8 7c fd ff ff       	call   80483d0 <puts@plt>\
+ 8048654:	83 c4 10             	add    esp,0x10\
+ 8048657:	b8 00 00 00 00       	mov    eax,0x0\
+ 804865c:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]\
+ 804865f:	65 33 0d 14 00 00 00 	xor    ecx,DWORD PTR gs:0x14\
+ 8048666:	74 05                	je     804866d <main+0x152>\
+ 8048668:	e8 43 fd ff ff       	call   80483b0 <__stack_chk_fail@plt>\
+ 804866d:	8b 4d fc             	mov    ecx,DWORD PTR [ebp-0x4]\
+ 8048670:	c9                   	leave  \
+ 8048671:	8d 61 fc             	lea    esp,[ecx-0x4]\
+ 8048674:	c3                   	ret    \
+ 8048675:	66 90                	xchg   ax,ax\
+ 8048677:	66 90                	xchg   ax,ax\
+ 8048679:	66 90                	xchg   ax,ax\
+ 804867b:	66 90                	xchg   ax,ax\
+ 804867d:	66 90                	xchg   ax,ax\
+ 804867f:	90                   	nop\
+}
